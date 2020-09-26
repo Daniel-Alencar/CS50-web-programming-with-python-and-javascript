@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    Formulário
+{% endblock %}
+
+{% block body %}
+    <form action="{{ url_for('hello') }}" method="post">
+        <input type="text" name="identificação" placeholder="Coloque seu nome">
+        <button>submeter</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+</head>
+<body>
+    <form>
+
+        <div>
+            <input name="name" type="text" placeholder="Name">
+            <input name="password" type="password" placeholder="Password">
+        </div>
+
+        <div>
+            Favorite color
+            <input name="color" type="radio" value="red"> red
+            <input name="color" type="radio" value="green"> green
+            <input name="color" type="radio" value="blue"> blue
+            <input name="color" type="radio" value="other"> other
+        </div>
+
+        <div>
+            <input name="country" list="countries" type="text" placeholder="Country">
+            <datalist id="countries">
+                <option value="Brasil">País do futebol</option>
+                <option value="EUA">País do capitalismo</option>
+                <option value="Argentina">País rival do Brasil</option>
+                <option value="Canadá">País quase-sem-nimguém</option>
+            </datalist>
+        </div>
+    </form>
+</body>
+</html>

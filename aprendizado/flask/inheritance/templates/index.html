@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    First page
+{% endblock %}
+
+{% block body %}
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ipsa dignissimos perferendis porro ab explicabo vitae architecto reiciendis atque, autem soluta repellendus cumque temporibus quibusdam libero iure magni beatae minus.</p>
+
+    <a href="{{ url_for('more') }}">See more</a>
+    <!--Se refere a função more que definimos no nosso arquivo python (isso no dará uma URL daquela função)-->
+{% endblock %}

@@ -1,0 +1,79 @@
+$color: red;
+
+ol {
+    font-size: large;
+    color: $color;
+}
+
+ul {
+    font-size: medium;
+    color: $color;
+}
+
+
+
+
+
+
+
+
+
+
+
+div {
+    background-color: aquamarine;
+    padding: 20px;
+
+    p {
+        color: crimson;
+    }
+
+    h3 {
+        color: darkblue;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%message {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    margin: 20px;
+    background-color: black;
+}
+
+.success {
+    @extend %message;
+    background-color: greenyellow;
+
+}
+
+.alert {
+    @extend %message;
+    background-color: yellow;
+}
+
+.error {
+    @extend %message;
+    background-color: red;
+}

@@ -1,0 +1,36 @@
+ol {
+  font-size: large;
+  color: red; }
+
+ul {
+  font-size: medium;
+  color: red; }
+
+div {
+  background-color: aquamarine;
+  padding: 20px; }
+  div p {
+    color: crimson; }
+  div h3 {
+    color: darkblue; }
+
+.success, .alert, .error {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  margin: 20px;
+  background-color: black; }
+
+.success {
+  background-color: greenyellow; }
+
+.alert {
+  background-color: yellow; }
+
+.error {
+  background-color: red; }
+
+/*# sourceMappingURL=style.css.map */

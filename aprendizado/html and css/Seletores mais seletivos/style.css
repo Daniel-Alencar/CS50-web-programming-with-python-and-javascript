@@ -1,0 +1,27 @@
+ol {
+    color: red;
+}
+
+ol li {
+    color: red;
+}
+
+ol > li {
+    color: red;
+}
+
+ul + li {
+    color: red;
+}
+
+
+
+
+
+input[type="text"] {
+    background-color: aqua;
+}
+
+input[type="number"] {
+    background-color: red;
+}

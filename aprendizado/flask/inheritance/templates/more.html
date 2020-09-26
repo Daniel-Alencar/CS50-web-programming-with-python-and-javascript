@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    Second page
+{% endblock %}
+
+{% block body %}
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aperiam quo assumenda magnam aut labore maxime id commodi soluta doloremque officiis magni, architecto ea asperiores enim harum sunt eos perspiciatis!</p>
+
+    <a href="{{ url_for('index') }}">Go back</a>
+    <!--Se refere a função index que definimos no nosso arquivo python (isso no dará uma URL daquela função)-->
+{% endblock %}
