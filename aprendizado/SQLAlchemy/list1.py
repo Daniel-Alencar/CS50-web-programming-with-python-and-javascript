@@ -1,6 +1,7 @@
+import os
+
 from flask import Flask, render_template, request
 from models import *
-# importando as classes do arquivo models.py
 
 app = Flask(__name__)
 
@@ -13,12 +14,21 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db.init_app(app)
 # vincule o banco de dados (db) com a aplicação Flask (app)
 
+
+
 def main():
-    db.create_all()
-    # criará as tabelas em nosso banco de dados de acordo com cada classe definida
+    flights = Flight.query.all()
+    # flifhts é uma lista de objetos, neste caso, uma lista de Flights (voos), o qual pode ser acessado cada propriedade de um objeto em específico usando:
+    # flight.origin
+    # flight.destination
+    # flight.duration
+    
+    for flight in flights:
+        print(f"{flight.origin} to {flight.destination} -- {flight.duration} minutes.")
+
+
 
 if __name__ == "__main__":
     with app.app_context():
         main()
-# precisa disso para rodar perfeitamente
 
