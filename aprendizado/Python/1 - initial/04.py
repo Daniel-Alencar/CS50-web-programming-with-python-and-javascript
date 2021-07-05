@@ -1,4 +1,5 @@
-x = 28
+# É necessário converter para 'int' (o retorno padrão de 'input' é 'str')
+x = int(input("Type a number: "))
 
 if x > 0:
     print("x is positive")
